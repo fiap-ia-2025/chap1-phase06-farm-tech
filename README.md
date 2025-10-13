@@ -148,4 +148,4 @@ Os resultados indicam o sucesso do treinamento com altos níveis de confiança n
 
 # 🎬 Vídeo 
 
-Link para vídeo do Youtube: 
+Link para vídeo do Youtube: https://youtu.be/ASjsuGd0Lrs
