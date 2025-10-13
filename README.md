@@ -6,7 +6,7 @@
   </a>
 </p>
 
-## 👥 Grupo 28
+## 👥 Grupo 25
 
 ## 👨‍🎓 Integrantes:
 
