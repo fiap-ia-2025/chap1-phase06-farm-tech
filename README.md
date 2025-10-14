@@ -84,7 +84,7 @@ git clone https://github.com/fiap-ia-2025/chap1-phase06-farm-tech.git
 
 # 3. **Execução**
 
-1. Criação do Dataset no GoogleDrive
+1. Criação do Dataset no GoogleDrive: necessário clonar as pastas do Google Drive para seu próprio Drive.
 2. Executar código do Google Colab Notebook
 
 # 🛠️ Tecnologias e Dependências
@@ -126,6 +126,16 @@ Para informar ao **YOLOv5** onde encontrar os conjuntos de imagens e quais class
 ## 4. 🧠 Treinamento do Modelo
 
 O treinamento ocorre em duas fases, usando diferentes números de épocas, **30 épocas e 60 épocas**, para que o modelo aprenda a detectar os objetos.
+
+| Métrica | 30 Épocas | 60 Épocas | Comparação |  
+| :--- | :---: | ---: | ---: |
+| mAP@0.5 | 81,7% | 86,4% | A precisão na identificação dos objetos melhorou. |
+| mAP@0.5:0.95 | 46,5% | 55,1% | A precisão na localização exata das caixas delimitadoras teve um avanço. |
+| Precisão | 81,7% | 87,6% | Pouca mudança na taxa de acertos, porém ambas estão altas. |
+| Recall | 80% | 84% | Melhoria de 4% para encontrar os objetos reais no conjunto de validação. |
+| Loss Final | 0.0247 | 0.0163 | O valor de erros diminuiu, ou seja, o modelo aprendeu a cometer menos erros. |
+
+**Para o treinamento de 60 Épocas:**
 
 ![Histórico de Execução](img/historico.jpg)
 
