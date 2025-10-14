@@ -232,14 +232,13 @@ Link do Drive (Com ambas as pastas): https://drive.google.com/drive/u/0/folders/
 
 ### 🔍 Métricas de Comparação
 
-| Critério | Descrição | YOLO Customizado | YOLO Tradicional | CNN do Zero |
-|----------|-----------|------------------|------------------|-------------|
-| **⏱️ Tempo de Treinamento** | Tempo necessário para treinar | [A coletar] | 0 min (pré-treinado) | [A coletar] |
-| **⚡ Tempo de Inferência** | Velocidade de predição (ms/imagem) | [A coletar] | [A coletar] | [A coletar] |
-| **🎯 Precisão/Accuracy** | Taxa de acertos na detecção | [A coletar] | [A coletar] | [A coletar] |
-| **🔧 Facilidade de Uso** | Complexidade de implementação | Média | Alta | Baixa |
-| **🔄 Flexibilidade** | Adaptação para novos objetos | Alta | Baixa | Alta |
-| **📱 Aplicabilidade** | Adequação para projeto | [A avaliar] | [A avaliar] | [A avaliar] |
+| Critério | Descrição |
+|----------|-----------|
+| **⚡ Tempo de Inferência** | Velocidade de predição (ms/imagem) |
+| **🎯 Precisão/Accuracy** | Taxa de acertos na detecção | 
+| **🔧 Facilidade de Uso** | Complexidade de implementação |
+| **🔄 Flexibilidade** | Adaptação para novos objetos | 
+| **📱 Aplicabilidade** | Adequação para projeto |
 
 ### 📈 Estrutura de Análise
 
