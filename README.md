@@ -159,3 +159,127 @@ Os resultados indicam o sucesso do treinamento com altos níveis de confiança n
 # 🎬 Vídeo 
 
 Link para vídeo do Youtube: https://youtu.be/ASjsuGd0Lrs
+
+---
+
+# **ENTREGA 2** 🔬 Comparação de Métodos de Visão Computacional
+
+## 📋 Sobre a Entrega 2
+
+A **Entrega 2** expande o projeto FarmTech Solutions com uma **análise comparativa** de diferentes abordagens de visão computacional. O objetivo é avaliar criticamente três métodos distintos para reconhecimento de objetos (vacas e ovelhas), comparando suas performances, facilidade de uso e aplicabilidade prática.
+
+### 🎯 Objetivos da Entrega 2
+
+- **Comparar 3 métodos**: YOLO Customizado vs YOLO Tradicional vs CNN do Zero
+- **Avaliar métricas**: Tempo de treinamento, tempo de inferência, precisão e facilidade de uso
+- **Fornecer recomendações**: Qual método usar em diferentes cenários
+- **Análise crítica**: Pontos fortes e limitações de cada abordagem
+
+### 🔬 Métodos Analisados
+
+1. **🎯 YOLO Customizado** (da Entrega 1)
+   - Modelo treinado especificamente para vacas e ovelhas
+   - Transfer learning com YOLOv5
+
+2. **⚡ YOLO Tradicional** (Ultralytics)
+   - Modelo pré-treinado no dataset COCO
+   - Pronto para uso, sem treinamento adicional
+
+3. **🧠 CNN do Zero** (TensorFlow)
+   - Rede neural convolucional criada from scratch
+   - Classificação binária: Vaca vs Ovelha
+
+## 🏗️ Estrutura da Entrega 2
+
+```bash
+ColabNotebooks/
+├── Cap_1/ # Dataset YOLO (Entrega 1 e 2)
+├── Cap_1_CNN/ # Dataset CNN organizado (Entrega 02)
+│ ├── train/
+│ │ ├── cow/ # Imagens de vacas para treino
+│ │ └── sheep/ # Imagens de ovelhas para treino
+│ ├── val/
+│ │ ├── cow/ # Imagens de vacas para validação
+│ │ └── sheep/ # Imagens de ovelhas para validação
+│ └── test/
+│ ├── cow/ # Imagens de vacas para teste
+│ └── sheep/ # Imagens de ovelhas para teste
+├── [Entrega02]FarmTech_Comparacao.ipynb # Notebook da Entrega 2
+```
+
+## 🚀 Como Executar a Entrega 2
+
+### 1. **Pré-requisitos**
+- Execução prévia da **Entrega 1** (YOLO Customizado)
+- Google Colab Notebook
+- Google Drive com as pastas organizadas
+
+### 2. **Setup dos Dados**
+```bash
+# 1. Clone as pastas necessárias para seu Google Drive:
+# - Cap_1 (da Entrega 1)
+# - Cap_1_CNN (nova estrutura para CNN)
+```
+Link do Drive (Com ambas as pastas): https://drive.google.com/drive/u/0/folders/1_wOu8gbT9Kah4gCnpIoYT3CPSlozOLbK
+
+### 3. Execução
+- Conectar Google Drive no Colab
+- Executar YOLO Tradicional: Análise com Ultralytics YOLOv8
+- Criar e Treinar CNN: Arquitetura personalizada do zero
+- Comparar Resultados: Análise comparativa dos 3 métodos
+
+## 📊 Critérios de Avaliação e Resultados
+
+### 🔍 Métricas de Comparação
+
+| Critério | Descrição | YOLO Customizado | YOLO Tradicional | CNN do Zero |
+|----------|-----------|------------------|------------------|-------------|
+| **⏱️ Tempo de Treinamento** | Tempo necessário para treinar | [A coletar] | 0 min (pré-treinado) | [A coletar] |
+| **⚡ Tempo de Inferência** | Velocidade de predição (ms/imagem) | [A coletar] | [A coletar] | [A coletar] |
+| **🎯 Precisão/Accuracy** | Taxa de acertos na detecção | [A coletar] | [A coletar] | [A coletar] |
+| **🔧 Facilidade de Uso** | Complexidade de implementação | Média | Alta | Baixa |
+| **🔄 Flexibilidade** | Adaptação para novos objetos | Alta | Baixa | Alta |
+| **📱 Aplicabilidade** | Adequação para projeto | [A avaliar] | [A avaliar] | [A avaliar] |
+
+### 📈 Estrutura de Análise
+
+**🔍 Análise Individual**: Cada método avaliado com métricas específicas  
+**⚖️ Comparação Direta**: Tabela consolidada dos três métodos  
+**🎯 Recomendações**: Por cenário (produção, pesquisa, educação)  
+**📝 Conclusões**: Análise crítica e limitações identificadas  
+
+### 📊 Resultados da Comparação
+
+| Método | Accuracy | Tempo Inferência | Facilidade de Uso | Flexibilidade |
+|--------|----------|------------------|-------------------|---------------|
+| **YOLO Customizado** | **86.4%** | Não medido | Média | Alta |
+| **YOLO Tradicional** | 72.9% | 520ms | **Alta** | Baixa |
+| **CNN do Zero** | 62.5% | 682ms | Baixa | **Alta** |
+
+### 🎯 Principais Descobertas
+
+**🏆 YOLO Customizado - Melhor Performance**
+- **86.4% de accuracy** - superior aos demais métodos
+- Treinamento específico para vacas/ovelhas foi eficaz
+- Recomendado para ambiente de produção
+
+**⚡ YOLO Tradicional - Melhor Praticidade**  
+- **Implementação imediata** sem necessidade de treinamento
+- Performance adequada (72.9%) para casos de uso gerais
+- Ideal para prototipagem rápida e demonstrações
+
+**🧠 CNN do Zero - Melhor Controle**
+- **Flexibilidade total** na arquitetura
+- Performance limitada (62.5%) com modelo simples
+- Excelente para fins educacionais e experimentação
+
+### 💡 Conclusão
+
+O **YOLO Customizado** demonstrou superioridade para o caso específico de detecção de vacas e ovelhas, validando a abordagem de treinamento especializado da FarmTech Solutions. A comparação revelou que modelos específicos superam soluções genéricas quando dados adequados estão disponíveis.
+
+**Recomendação:** Implementar YOLO Customizado para casos de produção, mantendo YOLO Tradicional como alternativa para demonstrações rápidas.
+
+
+
+
+
